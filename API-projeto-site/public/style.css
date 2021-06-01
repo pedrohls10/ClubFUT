@@ -14,6 +14,9 @@ body{
     width: 80%;
     margin: auto;
 }
+.container a{
+  text-decoration: none;
+}
 
 /* INICIO ESTILO HEADER */
 .header{
