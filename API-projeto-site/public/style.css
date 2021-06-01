@@ -1,0 +1,660 @@
+/* GERAL */
+*{
+    /* user-select: none; */
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+/* INICIO ESTILO HEADER */
+.header{
+    background-color: #0e0e0e;
+    width: 100%;
+    height: 80px;
+    border-bottom: solid green 3px;
+}
+
+.header h1{
+    float: left;
+    color: white;
+}
+
+.header ul{
+    /* Tira as 'bolinhas' da lista */
+    list-style: none;
+    float: right;
+}
+
+.header h1, .header ul{
+    margin-top: 20px;
+}
+
+.header li{
+    /* coloca os elementos <li> na mesma linha como blocos */
+    display: inline-block;
+    
+    font-size: 17px;;
+    padding: 6px;
+    border-radius: 5px;
+    background-color: #161616;
+}
+
+.header ul li a{
+    /* Tira o estilo de 'link' */
+    text-decoration: none;
+    color: white;
+}
+
+.header .text-green{
+    color: green;
+    font-weight: bold;
+}
+.banner{
+    width: 100%;
+    height: 450px;
+    background-image: url('./img/banner-fundo.jpeg');
+    text-align: center;
+    background-size: cover;
+    
+}
+.btn-orange{
+    background-color: green;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+.banner h1{
+    padding-top: 100px;
+    font-size: 50px;
+    font-weight: bold;
+    color: green;
+    text-shadow: black 0.05em 0.1em 0.1em;
+}
+.banner h3{
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: 15px;
+    color: white;
+}
+.news{
+    width: 100%;
+    height: 80px;
+    background-color: #232323;
+    text-align: center;
+}
+.news button{
+    margin-top: 20px;
+}
+
+.barra_s{
+background-color: green;
+width: 100%;
+height: 10px;
+}
+.box{
+    text-align: center;
+    background-color: #171717;
+  }
+  
+  .box-item{
+    display: inline-block;
+    width: 12%;
+    padding: 60px;
+  }
+  
+  .box-item img{
+    width: 100px;
+    margin-top: 35px;
+  }
+  
+  .box-item h3, .box-item p{
+    margin-top: 15px;
+    color: white;
+  }
+  .banner2{
+    width: 100%;
+    height: 450px;
+    background-image: url('./img/fundo.jpg');
+    text-align: center;
+    background-size: cover;
+  }
+    .banner2 h1{
+        padding-top: 100px;
+        font-size: 50px;
+        font-weight: bold;
+        color: green;
+        text-shadow: black 0.05em 0.1em 0.1em;
+    }
+    .banner2 h3{
+        font-size: 25px;
+        font-weight: bolder;
+        margin-top: 15px;
+        color: white;
+        text-shadow: black 0.05em 0.1em 0.1em;
+    }
+    .box2{
+    text-align: center;
+  }
+  
+  .box-item2{
+    display: inline-block;
+    width: 16%;
+    padding: 70px;
+  }
+  
+  .box-item2 img{
+    width: 300px;
+    margin-top: 0px;
+  }
+  
+  .box-item2 h3, .box-item p{
+    margin-top: 5px;
+  }
+  .texto1 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+  }
+  .texto2 {
+    color: green;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  .texto3 {
+    color: white;
+    margin-top: 0px;
+    font-size: 20px;
+  }
+  .box3{
+    text-align: center;
+    background-image: url('./img/fundo3.jpg');
+    background-size: cover;
+  }
+  .box-item3{
+    display: inline-block;
+    width: 16%;
+    padding: 70px;
+  }
+  
+  .box-item3 img{
+    width: 30px;
+    margin-top: 20px;
+  }
+  
+  .box-item3 h3, .box-item p{
+    margin-top: 5px;
+    color: white;
+  }
+  .login_box{
+   margin-top: 275px;
+   margin-left: 40%;
+   background-color: #161616;
+   width: 450px;
+   height: 300px;
+   border-radius: 11px;
+ }
+ .cadastro_box{
+  margin-top: 275px;
+  margin-left: 40%;
+  background-color: #161616;
+  width: 450px;
+  height:420px;
+  border-radius: 11px;
+}
+ .login_boxb{
+  margin-top: 275px;
+  margin-left: 38%;
+  background-color: green;
+  width: 17px;
+  height: 300px;
+  border-radius: 5px;
+}
+.cadastro_boxb{
+  margin-top: 275px;
+  margin-left: 38%;
+  background-color: green;
+  width: 17px;
+  height: 420px;
+  border-radius: 5px;
+}
+ .login_box h1, .cadastro_box h1{
+   padding:2%;
+   color: green;
+   text-align: center
+ }
+ 
+ .login_box  input, .cadastro_box input{
+   color: green;
+   width: 90%;
+   margin-top:30px;
+   margin-left: 17px;
+   border-radius: 5px;
+   height: 35px;
+   background-color:#161616 ;
+   border: hidden;
+   font-size: 17px ;
+   
+ }
+ .login_box button, .cadastro_box button{
+   color: green;
+    margin-top: 20px;
+    background-color: #161616;
+    margin-left: 41%;
+    font-size: 20px;
+    width: 95px;
+    height: 45px;
+    border-radius: 7px;
+    border: 2px solid green;
+    transition-duration: 0.3s;
+    cursor: pointer;
+ }
+ 
+ .login_box button:hover{
+background-color: green;
+color: white;
+ }
+ .cadastro_box button:hover{
+  background-color: green;
+  color: white;
+   }
+ .login_box hr, .cadastro_box hr{
+   height: 1px;
+  background-color: green;
+   margin-left: 16px;
+   margin-right: 29px;
+   border: none;
+   
+ }
+ .bd_login{
+  background-image: url('./img/fundolg.jpg');
+ }
+#checkbox{
+  margin-left: 90%;
+}
+select{
+  width: 404px;
+  height: 37px;
+  margin-left: 17px;
+  background-color: #161616;
+  color: green;
+}
+.links{
+  margin-left: 35.9%;
+  color: green;
+  text-decoration: none;
+  
+}
+.santosbar{
+  background-image: url(./img/torcidaSAN.jpg);
+  background-size: cover;
+  width: 100%;
+  height:600px;
+}
+.santosbar img{
+width: 300px;
+margin-top: 75px;
+margin-left: 41%;
+}
+.santosbar button{
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+  background-color: #16161600;
+  margin-left: 42%;
+  font-size: 40px;
+  width: 250px;
+  height: 70px;
+  border-radius: 7px;
+  border: 2px solid rgb(255, 255, 255);
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+.santosbar button:hover{
+  background-color: rgb(0, 0, 0);
+color: white;
+}
+.palmeirasbar{
+  background-image: url(./img/torcidaPAL.jpg);
+  background-size: cover;
+  width: 100%;
+  height:600px;
+}
+.palmeirasbar img{
+  width:400px;
+  margin-top: 75px;
+  margin-left: 38%;
+  }
+  .palmeirasbar button{
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    background-color: #16161600;
+    margin-left: 42%;
+    font-size: 40px;
+    width: 250px;
+    height: 70px;
+    border-radius: 7px;
+    border: 2px solid rgb(255, 255, 255);
+    transition-duration: 0.3s;
+    cursor: pointer;
+  }
+  .palmeirasbar button:hover{
+    background-color: green;
+    color: white;
+  }
+.corinthiansbar{
+  background-image: url(./img/torcidaCOR.jpg);
+  background-size: cover;
+  width: 100%;
+  height:600px;
+}
+.corinthiansbar img{
+  width: 340px;
+  margin-top: 75px;
+  margin-left: 40%;
+  }
+  .corinthiansbar button{
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    background-color: #16161600;
+    margin-left: 42%;
+    font-size: 40px;
+    width: 250px;
+    height: 70px;
+    border-radius: 7px;
+    border: 2px solid rgb(255, 255, 255);
+    transition-duration: 0.3s;
+    cursor: pointer;
+  }
+  .corinthiansbar button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+.saopaulobar{
+  background-image: url(./img/torcidaSP.jpg);
+  background-size: cover;
+  width: 100%;
+  height:600px;
+}
+.saopaulobar img{
+  width: 300px;
+  margin-top: 75px;
+  margin-left: 41%;
+  }
+  .saopaulobar button{
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    background-color: #16161600;
+    margin-left: 42%;
+    font-size: 40px;
+    width: 250px;
+    height: 70px;
+    border-radius: 7px;
+    border: 2px solid rgb(255, 255, 255);
+    transition-duration: 0.3s;
+    cursor: pointer;
+  }
+  .saopaulobar button:hover{
+    background-color: rgb(255, 0, 0);
+    color: white;
+  }
+  .rodape{
+    background-color: #161616;
+    height: 90px;
+    width: 100%;
+  }
+  .rodape h1 {
+    color: white;
+    margin-top: 45px;
+    font-size: 20px;
+  }
+  .pal-banner{
+    background-image: url(./img/torcidaPAL.jpg);
+    background-size: cover;
+    width: 100%;
+    height:800px;
+  }
+  .sp-banner{
+    background-image: url(./img/torcidaSP.jpg);
+    background-size: cover;
+    width: 100%;
+    height:800px;
+  }
+  .santos-banner{
+    background-image: url(./img/torcidaSAN.jpg);
+    background-size: cover;
+    width: 100%;
+    height:800px;
+  }
+  .cor-banner{
+    background-image: url(./img/torcidaCOR.jpg);
+    background-size: cover;
+    width: 100%;
+    height:800px;
+  }
+  .santos-banner img, .sp-banner img, .pal-banner img, .cor-banner img{
+    width: 500px;
+    margin-top: 150px;
+    margin-left: 0px;
+    float: left;
+  }
+  .santos-banner h1, .sp-banner h1 ,.pal-banner h1, .cor-banner h1{
+    font-size: 170px;
+    margin-top: 150px;
+    padding: 100px;
+    color: white;
+    text-shadow: black 10px 5px 5px;
+  }
+  .barra_black{
+    width: 100%;
+    background-color: black;
+    height: 50px;
+  }
+  .historia{
+    width: 100%;
+    background-image: url(./img/SANHIST.jpg);
+  }
+  .historia p{
+    text-indent: 1.5em;
+  }
+  .historia h1{
+    margin-left: 35%;
+    color: rgb(182, 180, 89);
+    text-shadow: black 5px 5px 10px;
+    font-size: 150px;
+    margin-right: 29px;
+  }
+  .historia h3{
+    margin-top: 7%;
+    margin-right: 80px;
+    text-align: justify;
+    margin-left: 80px;
+    font-size: 20px;
+  }
+  .craques{
+    background-image: url(./img/sancraques.jpg);
+    width: 100%;
+    height:1150px;
+  }
+  .craques h1{
+    margin-left: 36%;
+    color: white;
+    font-size: 120px;
+    text-shadow: black 5px 5px 10px;
+  }
+  .craques h2{
+    text-shadow: black 5px 5px 10px;
+    font-size: 90px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 300px;
+    
+  }
+  .craques img{
+    width: 900px;
+    margin-top: 30px;
+    
+  }
+  .craques p{
+    text-indent: 1.5em;
+  }
+.box_info{
+  width: 900px;
+  float: right;
+  margin-right: 64px;
+  margin-top: 150px;
+}
+.box_info h3{
+  color: white;
+  text-align: justify;
+  text-shadow: black 7px 7px 4px;
+}
+.box_info p{
+  text-indent: 1.5em;
+}
+
+.titulos{
+background-image: url(./img/trofeu.jpg);
+
+}
+.titulossp{
+  background-image: url(./img/trofeuSP.jpg);
+  
+  }
+  .titulospalm{
+    background-image: url(./img/trofeupalm.jpg);
+    
+    }
+.titulos h1, .titulossp h1, .titulospalm h1{
+  color: rgb(182, 180, 89);
+  text-shadow: black 5px 5px 10px;
+}
+.titulos p, .titulossp p, .titulospalm p{
+  margin-left: 52%;
+  font-size: 15px;
+  margin-top: 32px;
+  font-size: 14px;
+  width: 45%;
+}
+.rodape_times{
+  background-color: #161616;
+  height: 90px;
+  width: 100%;
+}
+.rodape_times h1{
+  margin-top: 30px;
+  color: white;
+  font-size: 20px;
+}
+.estadio_santos{
+  background-image:url(./img/estadiosantos.jpg);
+  width: 100%;
+  height: 1080px;
+
+}
+.estadio_sp{
+  background-image:url(./img/estadiosp.jpg);
+  width: 100%;
+  height: 1080px;
+
+}
+.estadio_palm{
+  background-image:url(./img/estadiopalm.jpg);
+  width: 100%;
+  height: 1080px;
+
+}
+.estadio_cor{
+  background-image:url(./img/estadiocor.jpg);
+  width: 100%;
+  height: 1080px;
+
+}
+.estadio_txt h2{
+  color: black;
+  text-align: justify;
+  position: absolute;
+  font-size: 22px;
+  width: 50%;
+  margin-top: 320px;
+  text-shadow: none;
+  margin-left: 5%;
+  float: left;
+}
+.neymarimg{
+position: relative;
+
+height: 300px;
+width: 200px;
+margin-left: 500px;
+}
+.neymarimg img{
+  position: absolute;
+width: 800px;
+bottom: 10% ;
+}
+.neymarimg h2{
+position: absolute;
+margin-top: 200px;
+margin-left: 240px;
+color: rgb(255, 255, 255);
+}
+.pepeformato{
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 920px;
+}
+.ademirformato{
+  position: absolute;
+  margin-top: 720px;
+  margin-left: 720px;
+}
+.raiformato{
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 860px;
+}
+.peleletra{
+  position: absolute;
+  top: 2300px;
+  transform: rotate(-35deg);
+  left: -120px;
+}
+.marcosletra{
+  position: absolute;
+  top: 2360px;
+  left: -80px;
+}
+.rogerioletra{
+  position: absolute;
+  top: 1920px;
+  transform: rotate(25deg);
+  left: 300px;
+}
+.ademir{
+  height: 1400px;
+ width: 100px;
+  background-color: blue;
+}
+.marcos img{
+  position: absolute;
+  width: 500px;
+  top: 1750px;
+  left: 200px;
+}
+.grafico{
+  width: 600px;
+  background-color: #16161657;
+  margin-top: 120px;
+  margin-left: 32%;
+}
+  

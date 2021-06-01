@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <title>Login</title>
+</head>
+<body class="bd_login">
+    <div class="header">
+        <div class="container">
+            <h1> <span class="text-green">ClubFut</h1>
+            <ul>
+                <li><a href="index.html" class="text-orange">Home</a> </li>
+                <li><a href="sobre.html">Sobre</a> </li>
+                <li><a href="cadastro.html">Cadastro</a> </li>
+                <li><a href="login.html">Login</a> </li>
+            </ul>
+        </div>
+        </div>
+        <div class="login_boxb">
+        <div class="login_box">
+            <form id="form_login" method="post" onsubmit="return entrar()">
+            <h1>Login</h1>
+            
+            <input id="user" placeholder="Usuário" name="login"><br><hr>
+            
+            <input type="password" id="senha" placeholder="Senha" name="senha"><hr>
+            <!-- <input class="check" type="checkbox" onclick="mostrar()">Show Password -->
+            <button>Entrar</button><br><br>
+            <a href="cadastro.html" class="links">Não tenho cadastro</a>
+            </form>
+        </div>
+        </div>
+        </body>
+        <script>
+            // function mostrar() {
+            //     var x = document.getElementById("senha");
+            //     if (x.type === "password") {
+            //     x.type = "text";
+            //     } else {
+            //     x.type = "password";
+            
+
+function entrar() {
+    var formulario = new URLSearchParams(new FormData(form_login));
+    fetch("/usuarios/autenticar", {
+        method: "POST",
+        body: formulario
+    }).then(resposta => {
+
+        if (resposta.ok) {
+
+            resposta.json().then(json => {
+
+                sessionStorage.login_usuario_meuapp = json.login;
+                sessionStorage.nome_usuario_meuapp = json.nome;
+                sessionStorage.id_usuario_meuapp = json.id;
+                sessionStorage.fk_usuario_meuapp = json.fkTime;
+                var fk = sessionStorage.fk_usuario_meuapp 
+                if(fk==1){
+                    window.location.href = 'santos.html';
+                }
+                else if(fk==2){
+                window.location.href = 'corinthians.html';
+               }
+                else if(fk==3){
+                window.location.href = 'saopaulo.html';
+               }
+                else if(fk==4){
+                window.location.href = 'palmeiras.html';
+               }
+            });
+
+        } else {
+
+            console.log('Erro de login!');
+
+            resposta.text().then(texto => {
+                console.error(texto);
+            });
+        }
+    });
+
+    return false;
+}
+
+</script>
+  }
+}
+        
+        

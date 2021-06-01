@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <title>Login</title>
+</head>
+<body class="bd_login">
+    <div class="header">
+        <div class="container">
+            <h1> <span class="text-green">ClubFut</h1>
+            <ul>
+                <li><a href="index.html" class="text-orange">Home</a> </li>
+                <li><a href="sobre.html">Sobre</a> </li>
+                <li><a href="cadastro.html">Cadastro</a> </li>
+                <li><a href="login.html">Login</a> </li>
+            </ul>
+        </div>
+        </div>
+        
+        <div class="cadastro_boxb">
+        <div class="cadastro_box">
+            <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+            <h1>Cadastro</h1>
+            
+            <input id="user" placeholder="Usuário" name="login"><br><hr>
+
+            <input id="nome" placeholder="Nome" name="nome"><br><hr>
+
+            <input type="password" id="senha" placeholder="Senha" name="senha"><hr><br>
+
+            <select id="time" onchange="escolherTime()">
+                <option value="semTime">Escolha seu time</option>
+                <option value="Santos">Santos</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Corinthians">Corinthians</option>
+                <option value="Palmeiras">Palmeiras</option>
+            </select><br><hr>
+            <input type="text" style="display: none;" id="Fktime" name="Fktime">
+
+            <!-- <input class="check" type="checkbox" onclick="mostrar()">Show Password -->
+            <button>Cadastrar</button><br><br>
+            <a href="login.html" class="links">Já tenho cadastro</a>
+        </form>
+        </div>
+        </div>
+        </body>
+        <script>
+//             function mostrar() {
+//                 var x = document.getElementById("senha");
+//                 if (x.type === "password") {
+//                 x.type = "text";
+//                 } else {
+//                 x.type = "password";
+//   }
+// }
+function cadastrar() {
+    if(valorFk = 0){
+        alert("Escolha seu time")
+    }
+    else{
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+            
+            if (response.ok) {
+
+                window.location.href='login.html';
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    div_erro.innerHTML = resposta;
+                });
+                
+            }
+        });
+
+        return false;
+    }
+    }
+    var valorFk = 0 
+    function escolherTime(){
+        if(time.value == "Santos"){
+            valorFk = 1
+        }
+        else if(time.value == "Corinthians"){
+            valorFk = 2
+        }
+        else if(time.value == "São Paulo"){
+            valorFk = 3
+        }
+        else if(time.value == "Palmeiras"){
+            valorFk = 4
+        }
+        else{
+            valorFk = 0
+        }
+        Fktime.value = valorFk
+        
+    }
+
+        </script>
