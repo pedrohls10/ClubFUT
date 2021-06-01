@@ -27,9 +27,9 @@
             <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
             <h1>Cadastro</h1>
             
-            <input id="user" placeholder="Usuário" name="login"><br><hr>
+            <input id="user" placeholder="Usuário" name="login" required minlength="4"><br><hr>
 
-            <input id="nome" placeholder="Nome" name="nome"><br><hr>
+            <input id="nome" placeholder="Nome" name="nome" required minlength="3"><br><hr>
 
             <input type="password" id="senha" placeholder="Senha" name="senha" required minlength="6" maxlength="14"><hr><br>
 
